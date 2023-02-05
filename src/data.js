@@ -7,7 +7,7 @@ const accounts = JSON.parse(accountData);
 const userData = fs.readFileSync(path.join(__dirname, 'json/users.json'), { encoding: 'utf8' });
 const users = JSON.parse(userData);
 
-var writeJSON= (accounts)=>{
+var writeJSON= ()=>{
     let accountsJSON=JSON.stringify(accounts);
     fs.writeFileSync(path.join(__dirname, 'json/accounts.json'), accountsJSON , 'utf8' );
 }
