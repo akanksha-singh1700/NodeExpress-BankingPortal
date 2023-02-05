@@ -11,7 +11,7 @@ const data = require('./data');
 
 const accounts= data.accounts;
 const users=data.users;
-const writeJSON= data.writeJSON();
+const writeJSON= data.writeJSON;
 
 app.get('/', function (req, res) {
     res.render('index', { title: 'Account Summary', accounts: accounts });
